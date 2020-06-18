@@ -7,5 +7,20 @@
 </head>
 <body>
   <h1>Puppeteer Test</h1>
+
+  <h2>Test 1: Increment number</h2>
+  <div id="number-field">0</div>
+  <button id="number-button">Increment</button>
+
+
+  <script>
+    const fieldNumber = document.getElementById('number-field');
+    const btnNumber = document.getElementById('number-button');
+
+    btnNumber.addEventListener('click', () => {
+      const existing = parseInt(fieldNumber.innerHTML);
+      fieldNumber.innerHTML = existing + 1;
+    })
+  </script>
 </body>
 </html>
