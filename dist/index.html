@@ -4,13 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Puppeteer test</title>
+
+  <style>
+    input {
+      border: 1px solid red;
+    }
+    input:hover { border-color: blue; }
+    input:focus { border-color: lime; }
+
+    @media (max-width: 400px) {
+      body {
+        background: grey;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1>Puppeteer Test</h1>
 
+  <hr>
+
   <h2>Test 1: Increment number</h2>
   <div id="number-field">0</div>
   <button id="number-button">Increment</button>
+
+  <hr>
+
+  <h2>Test 2: Input border color</h2>
+  <input type="text" id="focus-field">
 
 
   <script>
